@@ -1,5 +1,5 @@
-#ifndef STUDENTMANAGEMENTGUI_H
-#define STUDENTMANAGEMENTGUI_H
+#ifndef APPGUI_H
+#define APPGUI_H
 
 #include <QWidget>
 #include <QtWidgets>
@@ -34,4 +34,4 @@ private slots:
     void Update();
 };
 
-#endif // STUDENTMANAGEMENTGUI_H
+#endif // APPGUI_H
