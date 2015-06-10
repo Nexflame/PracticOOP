@@ -17,9 +17,6 @@ public:
     void setQuantity(int _quantity) { quantity = _quantity; }
     void setName(std::string _name) { name = _name; }
 
-    friend std::istream& operator >> (std::istream& in, Product& obj);
-    friend std::ostream& operator << (std::ostream& out, const Product& obj);
-
     bool operator == (const Product& obj);
     bool operator != (const Product& obj);
 

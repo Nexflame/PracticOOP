@@ -1,12 +1,4 @@
-/*
- * Controller.cpp
- *
- *  Created on: Apr 8, 2015
- *      Author: Nexflame
- */
-
 #include "Inventorry.h"
-//#include "../Repository/Repository_implementation.h"
 #include <string.h>
 #include <sstream>
 #include <algorithm>

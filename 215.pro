@@ -16,4 +16,5 @@ MOC_DIR += ./GeneratedFiles/debug
 OBJECTS_DIR += debug
 UI_DIR += ./GeneratedFiles
 RCC_DIR += ./GeneratedFiles
+CONFIG += c++11
 include(215.pri)

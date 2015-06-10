@@ -1,10 +1,3 @@
-/*
- * Repository.cpp
- *
- *  Created on: Apr 7, 2015
- *      Author: Nexflame
- */
-
 #ifndef REPOSITORY_I_REPOSITORY_H_
 #define REPOSITORY_I_REPOSITORY_H_
 
@@ -61,12 +54,6 @@ const std::vector<T>& ProductRepository<T>::getObjects() const
 }
 
 template <class T>
-const int ProductRepository<T>::getSize() const
-{
-    return objects.size();
-}
-
-template <class T>
 void ProductRepository<T>::addObject(T& newObject)
 {
     if (!newObject)
@@ -103,13 +90,23 @@ void ProductRepository<T>::_loadAll()
     std::ifstream loaderProducts;
     loaderProducts.open(getFileNameProduct().c_str(), std::ifstream::in);
 
+    if (!loaderProducts)
+        return;
+
     bool stillReading = true;
     while (stillReading)
     {
         T obj = new Product;
 
-        if (loaderProducts >> *obj)
+        int id;
+        std::string name;
+
+        if (loaderProducts >> id >> name)
+        {
+            obj->setName(name);
+            obj->setId(id);
             addObject(obj);
+        }
         else
             stillReading = false;
     }
@@ -122,6 +119,9 @@ void ProductRepository<T>::_loadAll()
 
     std::ifstream loaderQuantity;
     loaderQuantity.open(getFileNameQunatity().c_str(), std::ifstream::in);
+
+    if (!loaderQuantity)
+        return;
 
     stillReading = true;
     while (stillReading)
@@ -156,7 +156,7 @@ void ProductRepository<T>::_saveAll()
 
     for (auto& currObj : objects)
         if (currObj)
-            writerProducts << *currObj << "\n";
+            writerProducts << currObj->getId() << " " << currObj->getNume() << "\n";
 
     writerProducts.close();
 

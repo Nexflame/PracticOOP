@@ -1,16 +1,10 @@
-/*
- * Repository.h
- *
- *  Created on: Apr 7, 2015
- *      Author: Nexflame
- */
-
 #ifndef REPOSITORY_REPOSITORY_H_
 #define REPOSITORY_REPOSITORY_H_
 
 #include <string>
 #include <vector>
 #include <mutex>
+#include <thread>
 #include "../Entity/Product.h"
 
 template <class T>
@@ -28,7 +22,6 @@ public:
     void setFileNameQuntity(const std::string& fileName);
 
     const std::vector<T>& getObjects() const;
-    const int getSize() const;
     void addObject(T& newObject);
     const T findByID(const int& ID) const;
     void save();

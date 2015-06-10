@@ -13,16 +13,6 @@
 class GUI
 {
 public:
-    QStandardItemModel* createModel(QObject* parent)
-    {
-        const int numRows = 100;
-        const int numColumns = 2;
-
-        QStandardItemModel* model = new QStandardItemModel(numRows, numColumns);
-
-        return model;
-    }
-
     QVBoxLayout* mainLayout;
     QPushButton* buttonUpdate;
 
@@ -43,7 +33,8 @@ public:
 
 
         Tabel = new QTableView;
-        Tabel->setModel(createModel(Tabel));
+        QStandardItemModel* model = new QStandardItemModel(100, 3);
+        Tabel->setModel(model);
         mainLayout->addWidget(Tabel);
     }
 };

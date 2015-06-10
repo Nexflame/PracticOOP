@@ -4,15 +4,12 @@
 
 # This is a reminder that you are using a generated .pro file.
 # Remove it when you are finished editing this file.
-message("You are running qmake on a generated .pro file. This may not work!")
-
 
 HEADERS += ./Controller/Inventorry.h \
     ./Entity/Product.h \
     ./Repository/ProductRepository.h \
     ./Repository/Repository_implementation.h \
     ./UI/GUI/GUI.h \
-    ./Utils/Utils.h \
     ./myclass.h \
     ./UI/Window.h
 SOURCES += ./Controller/Inventorry.cpp \
@@ -23,3 +20,7 @@ SOURCES += ./Controller/Inventorry.cpp \
     ./UI/Window.cpp
 FORMS += ./myclass.ui
 RESOURCES += myclass.qrc
+
+DISTFILES += \
+    $$PWD/cantitati.txt \
+    $$PWD/produse.txt

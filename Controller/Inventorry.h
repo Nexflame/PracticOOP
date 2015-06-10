@@ -2,7 +2,6 @@
 #define CONTROLLER_H_
 
 #include "../Repository/Repository_implementation.h"
-#include "../Utils/Utils.h"
 #include <functional>
 #include <mutex>
 #include <exception>
