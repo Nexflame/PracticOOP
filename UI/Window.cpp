@@ -2,7 +2,7 @@
 #include <QtCore>
 #include <QtGui>
 
-AppWindow::AppWindow(Inventorry* _ctrl, QWidget *parent)
+AppWindow::AppWindow(Inventory* _ctrl, QWidget *parent)
     : QWidget(parent)
 {
     ui.setupUI(this);

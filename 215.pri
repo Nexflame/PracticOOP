@@ -5,14 +5,14 @@
 # This is a reminder that you are using a generated .pro file.
 # Remove it when you are finished editing this file.
 
-HEADERS += ./Controller/Inventorry.h \
+HEADERS += ./Controller/Inventory.h \
     ./Entity/Product.h \
     ./Repository/ProductRepository.h \
     ./Repository/Repository_implementation.h \
     ./UI/GUI/GUI.h \
     ./myclass.h \
     ./UI/Window.h
-SOURCES += ./Controller/Inventorry.cpp \
+SOURCES += ./Controller/Inventory.cpp \
     ./Entity/Product.cpp \
     ./main.cpp \
     ./myclass.cpp \
@@ -21,6 +21,3 @@ SOURCES += ./Controller/Inventorry.cpp \
 FORMS += ./myclass.ui
 RESOURCES += myclass.qrc
 
-DISTFILES += \
-    $$PWD/cantitati.txt \
-    $$PWD/produse.txt

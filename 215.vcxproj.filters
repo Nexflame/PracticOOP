@@ -65,7 +65,7 @@
     <ClCompile Include="Entity\Product.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Controller\Inventorry.cpp">
+    <ClCompile Include="Controller\Inventory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -93,16 +93,13 @@
     <ClInclude Include="UI\GUI\GUI.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Utils\Utils.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Entity\Product.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Controller\Inventorry.h">
+    <ClInclude Include="Repository\ProductRepository.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Repository\ProductRepository.h">
+    <ClInclude Include="Controller\Inventory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

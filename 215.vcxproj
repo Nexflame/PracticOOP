@@ -137,7 +137,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Controller\Inventorry.cpp" />
+    <ClCompile Include="Controller\Inventory.cpp" />
     <ClCompile Include="Entity\Product.cpp" />
     <ClCompile Include="GeneratedFiles\Debug\moc_myclass.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
@@ -211,13 +211,12 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Controller\Inventorry.h" />
+    <ClInclude Include="Controller\Inventory.h" />
     <ClInclude Include="Entity\Product.h" />
     <ClInclude Include="GeneratedFiles\ui_myclass.h" />
     <ClInclude Include="Repository\ProductRepository.h" />
     <ClInclude Include="Repository\Repository_implementation.h" />
     <ClInclude Include="UI\GUI\GUI.h" />
-    <ClInclude Include="Utils\Utils.h" />
     <CustomBuild Include="UI\Window.h">
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing Window.h...</Message>

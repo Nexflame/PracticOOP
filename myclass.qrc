@@ -1,4 +1,8 @@
 <RCC>
     <qresource prefix="MyClass">
     </qresource>
+	<qresource prefix="/">
+        <file>cantitati.txt</file>
+		<file>produse.txt</file>
+    </qresource>
 </RCC>

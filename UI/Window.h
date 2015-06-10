@@ -11,7 +11,7 @@
 #include <string>
 #include <thread>
 
-#include "Controller/Inventorry.h"
+#include "Controller/Inventory.h"
 #include "GUI/GUI.h"
 
 using namespace std;
@@ -21,12 +21,12 @@ class AppWindow : public QWidget
     Q_OBJECT
 
 public:
-    AppWindow(Inventorry* _ctrl, QWidget *parent = 0);
+    AppWindow(Inventory* _ctrl, QWidget *parent = 0);
     ~AppWindow();
 
 private:
     GUI ui;
-    Inventorry* ctrl;
+    Inventory* ctrl;
     void LinkSignalsToSlots();
     void ReloadObjectList();
 
